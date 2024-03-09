@@ -1,0 +1,258 @@
+.portal {
+    background: var(--clr-darker-blue);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.signin form {
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.signin .si-logo {
+    margin-bottom: 2rem;
+}
+
+.signin .si-logo img {
+    width: 10rem;
+}
+
+.signin label {
+    font-size: var(--size-sm);
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--clr-light);
+}
+
+.text-input {
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: .25rem;
+    font-size: var(--size-sm);
+    border: 1px solid var(--clr-light);
+    background: transparent;
+    color: var(--clr-light);
+    padding: 0.5rem 1rem;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.signin .signin-btn {
+    width: 100%;
+    padding: .5rem .75rem;
+    margin: .75rem 0 0 0;
+}
+
+.other-btn {
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    background: none;
+    color: var(--clr-light);
+    font-size: var(--size-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--clr-light);
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.other-btn:hover {
+    border-color: var(--clr-rose);
+    color: var(--clr-rose);
+}
+
+.links,
+.or,
+.parent-btn {
+    width: 60%;
+}
+
+.links a {
+    display: block;
+    color: var(--clr-light);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: var(--size-sm);
+    transition: .5s;
+}
+
+.links a:hover {
+    color: var(--clr-rose);
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: var(--clr-light);
+}
+
+.or span {
+    padding: 0 .5rem;
+}
+
+.bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: var(--clr-light);
+}
+
+.log-footer {
+    color: var(--clr-light);
+    text-align: center;
+    font-size: var(--size-xs);
+    max-width: 80%;
+    padding-top: 3rem;
+}
+
+.log-footer a {
+    text-decoration: underline;
+    font-size: var(--size-xs);
+    color: var(--clr-rose);
+    transition: 0.5s;
+}
+
+.right {
+    display: none;
+}
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../../public/pexels-bess-hamiti-36487.jpg) no-repeat center center / cover;
+    height: 100vh;
+}
+
+.showcase-text {
+    font-size: var(--size-6xl);
+    width: 100%;
+    color: var(--clr-light);
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+
+
+/*xs */
+/*@media (min-width :475px){}*/
+
+/*sm */
+/*@media (min-width :640px){}/*
+
+/*md */
+@media (min-width :768px){
+    .signin .si-logo {
+        margin-bottom: 3rem;
+    }
+    
+    .signin .si-logo img {
+        width: 12rem;
+    }
+
+    .signin {
+        width: 80%;
+    }
+    
+    .signin form {
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+    
+    .signin label {
+        line-height: 2rem;
+    }
+    
+    .right {
+        display: flex;
+        flex: 1;
+    }
+    .showcase {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: url(../../public/pexels-bess-hamiti-36487.jpg) no-repeat center center / cover;
+        height: 100vh;
+    }
+    
+    .showcase-text {
+        font-size: var(--size-3xl);
+    }
+}
+
+/*lg */
+@media (min-width :1024px){
+    .left {
+        flex: 4;
+    }
+
+    .right {
+        flex: 6;
+    }
+}
+
+/*xl */
+@media (min-width :1280px){
+    
+    .signin label {
+        font-size: var(--size-md);
+        line-height: 2rem;
+    }
+    
+    .text-input {
+        font-size: var(--size-md);
+    }
+
+    .other-btn {
+        font-size: var(--size-md);
+    }
+    
+    
+    .log-footer {
+        font-size: var(--size-sm);
+        padding-top: 5rem;
+    }
+    
+    .log-footer a {
+        font-size: var(--size-sm);
+    }
+    
+    .showcase-text {
+        font-size: var(--size-6xl);
+    }
+    
+}
+
+
+/*xxl */
+/*@media (min-width :1536px){}*/

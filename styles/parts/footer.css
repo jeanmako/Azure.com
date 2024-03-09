@@ -1,0 +1,219 @@
+.footer {
+    background: var(--clr-darker-blue);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    font-size: var(--size-xs);
+    color: var(--clr-light);
+    transition: 0.5s;
+}
+
+.link:hover {
+    color:var(--clr-rose);
+}
+
+.ft-title {
+    color: var(--clr-light);
+    font-size: var(--size-md);
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.link svg {
+    height: var(--size-sm);
+    width: var(--size-sm);
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+}
+
+.company,
+.academics,
+.social,
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.apple-playstore {
+    width: 6rem;
+    height: 2rem;
+    /* object-fit: cover; */
+}
+.footer-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.copyright-text{
+    display: block;
+    color: var(--clr-light);
+    font-size: var(--size-xs);
+}
+
+.copyright-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: var(--clr-light);
+    padding: 0;
+    gap: 1rem;
+}
+
+.cprt-content{
+    color: var(--clr-light);
+    text-decoration: underline;
+    transition: 0.5s;
+    font-size: var(--size-xs);
+}
+
+.cprt-content:hover{
+    color: var(--clr-rose);
+}
+
+.pexels {
+    width: 4rem;
+    height: 3.25rem;
+}
+/*xs */
+/*@media (min-width :475px){}*/
+
+/*sm */
+/*@media (min-width :640px){}/*
+
+/*md */
+@media (min-width :768px){
+    .link {
+        font-size: var(--size-xs);
+    }
+    
+    .ft-title {
+        font-size: var(--size-lg);
+        padding-bottom: 1rem;
+    }
+    
+    .link svg {
+        height: var(--size-lg);
+        width: var(--size-lg);
+    }
+    
+    .apple-playstore {
+        width: 6.75rem;
+        height: 2.25rem;
+    }
+    .footer-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .copyright-text{
+        font-size: var(--size-xs);
+    
+    }
+    
+    .cprt-content{
+        font-size: var(--size-xs);
+    }
+
+    .pexels {
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
+/*lg */
+@media (min-width :1024px){
+    .link {
+    font-size: var(--size-sm);
+}
+
+.ft-title {
+    font-size: var(--size-xl);
+}
+
+.link svg {
+    height: var(--size-xl);
+    width: var(--size-xl);
+}
+
+.apple-playstore {
+    width: 8rem;
+    height: 2.75rem;
+}
+.footer-content {
+    gap: 3rem;
+}
+
+.copyright {
+    gap: 8rem;
+}
+
+.copyright-text{
+    font-size: var(--size-sm);
+
+}
+
+.copyright-item {
+    gap: 2em;
+}
+
+.cprt-content{
+    font-size: var(--size-sm);
+}
+
+.pexels {
+    width: 4rem;
+    height: 4rem;
+}
+}
+
+/*xl */
+@media (min-width :1280px){
+    .copyright {
+        gap: 15rem;
+    }
+}
+
+/*xxl */
+/*@media (min-width :1536px){}*/

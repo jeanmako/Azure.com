@@ -1,0 +1,139 @@
+.about {
+    background: var(--clr-grey);
+    width: 100vw;
+    /* height: 100vh; */
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.step-title {
+    text-align: center;
+    font-size: var(--size-sm);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.steps-flex {
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* white-space: nowrap; */
+    overscroll-behavior-inline: contain;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+}
+
+.steps {
+    align-items: space-between;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-dark);
+    width:15rem;
+    height: 25rem;
+    padding: 1rem 1rem;
+}
+
+.number1,
+.number2,
+.number3,
+.number4 {
+    font-size: var(--size-2xl);
+    align-items: center;
+    border-radius: 0.3rem;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    width: 28px;
+}
+.number1{
+    background: var(--clr-tur);
+}
+.number2 {
+    background: var(--clr-rose);
+}
+.number3 {
+    background: var(--clr-light-blue);
+}
+.number4 {
+    background: var(--clr-gold);
+}
+.step-sub {
+    font-size: var(--size-xl);
+    padding-top: 1rem;
+}
+
+.step-text {
+    font-size: var(--size-xs);
+    /* width: fit-content; */
+}
+
+.step-link {
+    color: var(--clr-rose);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.step-link:hover {
+    color: var(--clr-blue);
+}
+
+.step-img {
+    object-fit: cover;
+}
+
+/*xs */
+/*@media (min-width :475px){}*/
+
+/*sm */
+/*@media (min-width :640px){}/*
+
+/*md */
+@media (min-width :768px){
+.steps {
+    width:18rem;
+    height: 100%;
+    }
+}
+
+/*lg */
+/*@media (min-width :1024px){}
+
+/*xl */
+@media (min-width :1280px){
+    .about {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    .steps {
+        width:20rem;
+        height: 100%;
+        }
+.steps-flex {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}    
+.number1,
+.number2,
+.number3,
+.number4 {
+    font-size: var(--size-3xl);
+    height: 35px;
+    width: 35px;
+}
+
+.step-sub {
+    font-size: var(--size-3xl);
+}
+.step-text {
+    font-size: var(--size-sm);
+}
+
+}
+
+/*xxl */
+/*@media (min-width :1536px){}*/

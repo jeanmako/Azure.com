@@ -1,0 +1,582 @@
+.grade {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  background: url(../../public/pexels-tima-miroshnichenko-5428142.jpg) no-repeat center center/cover;
+}
+
+.grade::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+.grade-showcase {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    color: var(--clr-light);
+    flex-direction: column;
+    gap: 1.5rem;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+    padding-left: 1rem;
+}
+
+.grade-name {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: var(--size-xs);
+    font-weight: 600;
+    color: var(--clr-rose);
+}
+
+.grade-text {
+    font-size: var(--size-md);
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25rem;
+    font-weight: bold;
+}
+
+.grade-class {
+    font-size: var(--size-xs);
+    font-weight: 500;
+    font-style: italic;
+    color: var(--clr-light-blue);
+}
+
+.class-content {
+    margin-top: 1rem;
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+   align-items: center;
+}
+
+.class-text {
+    font-size: var(--size-md);
+    font-weight: 500;
+}
+
+.class-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+    list-style-type:square;
+}
+
+.class-list-item {
+   
+    font-size: var(--size-xs);
+    font-weight: 500;
+    color: var(--clr-darker-blue);
+}
+
+.class-sub {
+    font-size: var(--size-xs);
+    font-weight: 500;
+    color: var(--clr-dark-blue);
+}
+
+.class-apply {
+    background: var(--clr-darker-blue);
+    /* height: 15rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.class-apply-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-apply-text {
+    color: var(--clr-light);
+    font-size: var(--size-md);
+    text-align: center;
+    font-weight: 700;
+}
+
+.class-apply-content .class-apply-btn {
+    font-size: var(--size-xs);
+    padding: .25rem .5rem;
+}
+
+.curriculum {
+    margin-bottom: 1.5rem;
+}
+
+.curriculum-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* align-items: center; */
+    justify-content: center;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.curriculum-title {
+    font-size: var(--size-lg);
+    font-weight: 600;
+    color: var(--clr-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.curriculum-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.curriculum-left {
+    width: 80%;
+    display: flex;
+    /* position: relative; */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+.curriculum-left img {
+    width: 12.5rem;
+    height: 15rem;
+    object-fit: cover;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    /* position: absolute; */
+    
+}
+
+.curriculum-right {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Accordion */
+.accordion {
+   padding-bottom: .5rem;
+}
+
+.accordion-content .main {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from{transform: translateX(3rem);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+.main.active {
+    display:block;
+}
+
+.accordion-group {
+    border-bottom: 1px solid var(--clr-blue);
+    padding-bottom: .5rem;
+}
+
+.accordion-group-header {
+    padding: .75rem 0;
+    margin-bottom: .25rem;
+    position: relative;
+}
+
+.accordion-group-header-text {
+    font-size: var(--size-sm);
+    text-transform: capitalize;
+    color: var(--clr-blue);
+    font-weight: 600;
+    width: 100%;
+}
+
+.accordion-group-header i {
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+    font-size: var(--size-xs);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-light);
+    width: .5rem;
+    height: .5rem;
+    padding: .5rem .5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .4);
+}
+
+.accordion-group-body {
+    display: none;
+}
+
+.accordion-group-body.open {
+    display: block;
+    animation: popin .5s ease;
+}
+
+@keyframes popin {
+    from{transform: translateY(-3rem);opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}
+
+.accordion-menu {
+    max-width: 15rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-grey);
+    padding: .25rem .25rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.accordion-menu.high {
+    max-width: 17.5rem;
+}
+
+.accessible-menu-btn {
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: var(--size-xs);
+}
+
+.accessible-menu-btn.active {
+    background: var(--clr-blue);
+    color: var(--clr-light);
+    transition: all .3s ease-in-out;
+}
+
+.accordion-group-body {
+    font-size: var(--size-xs);
+    color: var(--clr-blue);
+    font-weight: 500;
+}
+
+.accordion-group-body.open {
+    display: block;
+}
+
+.curriculum-right .curriculum-btn {
+    color: var(--clr-blue);
+    font-size: var(--size-xs);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 2.5rem;
+    padding: .25rem 1rem;
+    margin: 1.5rem 0;
+}
+
+
+/*xs */
+/*@media (min-width :475px){}*/
+
+/*sm */
+/*@media (min-width :640px){}/*
+
+/*md */
+@media (min-width :768px){
+    .grade {
+        height: 20rem;
+      }
+
+      .grade-showcase {
+          gap: 2rem;
+          padding-left: 2.5rem;
+      }
+      
+      .grade-name {
+          font-size: var(--size-sm);
+      }
+      
+      .grade-text {
+          font-size: var(--size-xl);
+          max-width: 40rem;
+      }
+      
+      .grade-class {
+          font-size: var(--size-sm);
+      }
+      
+      .class-content {
+          margin-top: 1.5rem;
+            gap: 1.5rem;
+            max-width: 45rem;
+      }
+      
+      .class-text {
+          font-size: var(--size-lg);
+      }
+      
+      .class-list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+      }
+      
+      .class-list-item {
+         
+          font-size: var(--size-sm);
+      }
+      
+      .class-sub {
+          font-size: var(--size-sm);
+      }
+      
+      .class-apply {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+      }
+      
+      .class-apply-content {
+          gap: 1.5rem;
+      }
+      
+      .class-apply-text {
+          font-size: var(--size-xl);
+      }
+      
+      .class-apply-content .class-apply-btn {
+          font-size: var(--size-sm);
+          padding: .5rem .75rem;
+      }
+      
+      .curriculum {
+          margin-bottom: 2rem;
+      }
+      
+      .curriculum-content {
+          gap: 1.5rem;
+          max-width: 50rem;
+      }
+      
+      .curriculum-title {
+          font-size: var(--size-2xl);
+          margin-bottom: 1.75rem;
+      }
+      .curriculum-grid {
+          grid-template-columns: 40% 60%;
+      }
+      
+      .curriculum-left {
+          width: 95%;
+          display: flex;
+          align-items: start;
+      }
+      .curriculum-left img {
+          width: 15rem;
+          height: 17.5rem;
+          margin-top: 2rem;
+          margin-bottom: 0;
+      }
+      
+      /* Accordion */
+      .accordion {
+         padding-bottom: 1rem;
+      }
+    
+      
+      .accordion-menu {
+          max-width: 15rem;
+          padding: .5rem .75rem;
+          margin-bottom: 2rem;
+      }
+      
+      .accordion-menu.high {
+        max-width: 20rem;
+    }
+      .accessible-menu-btn {
+          font-size: var(--size-sm);
+      }
+      
+      .curriculum-right .curriculum-btn {
+          font-size: var(--size-sm);
+          padding: .5rem 1rem;
+          margin: 2rem 0;
+      }
+}
+
+/*lg */
+@media (min-width :1024px){
+    .grade-text {
+        font-size: var(--size-2xl);
+        max-width: 60rem;
+    }
+}
+
+/*xl */
+@media (min-width :1280px){
+    .grade {
+        height: 30rem;
+      }
+      
+    .grade-showcase {
+        gap: 3rem;
+        padding-left: 5rem;
+    }
+    
+    .grade-name {
+        font-size: var(--size-md);
+    }
+    
+    .grade-text {
+        font-size: var(--size-4xl);
+        max-width: 60rem;
+    }
+    
+    .grade-class {
+        font-size: var(--size-md);
+    }
+    
+    .class-content {
+        padding-top: 2rem;
+        max-width: 55rem;
+        gap: 2rem;
+    }
+    
+    .class-text {
+        font-size: var(--size-2xl);
+    }
+    
+    .class-list {
+        gap: 1.5rem;
+    }
+    
+    .class-list-item {
+        font-size: var(--size-md);
+    }
+    
+    .class-sub {
+        font-size: var(--size-md);
+    }
+    
+    .class-apply {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+    
+    .class-apply-content {
+        gap: 2.5rem;
+    }
+    
+    .class-apply-text {
+        font-size: var(--size-2xl);
+    }
+    
+    .class-apply-content .class-apply-btn {
+        font-size: var(--size-lg);
+        padding: .5rem 1rem;
+    }
+    
+    .curriculum {
+        margin-bottom: 4rem;
+    }
+    
+    .curriculum-content {
+        gap: 2rem;
+        max-width: 75rem;
+    }
+    
+    .curriculum-title {
+        font-size: var(--size-3xl);
+        margin-bottom: 2rem;
+    }
+    
+    .curriculum-left {
+        width: 95%;
+    }
+    .curriculum-left img {
+        width: 22.5rem;
+        height: 25rem;
+        margin-top: 2rem;
+    }
+    
+    .curriculum-right {
+        width: 75%;
+    }
+    /* Accordion */
+    .accordion {
+       padding-bottom: 2rem;
+    }
+    
+    .accordion-group-header {
+        padding: 1.25rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .accordion-group-header-text {
+        font-size: var(--size-xl);
+        width: 90%;
+    }
+    
+    .accordion-group-header i {
+        right: 4rem;
+        top: 1.5rem;
+        font-size: var(--size-sm);
+        width: 1rem;
+        height: 1rem;
+        padding: 1rem 1rem;
+    }
+    
+    .accordion-menu {
+        max-width: 20rem;
+        justify-content: center;
+        gap: 2rem;
+        padding: .5rem 1.25rem;
+        border-radius: .75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .accordion-menu.high {
+        max-width: 30rem;
+    }
+    .accessible-menu-btn {
+        padding: .75rem 1.25rem;
+        border-radius: .5rem;
+        font-size: var(--size-md);
+    }
+
+    .accordion-group-body {
+        font-size: var(--size-sm);
+    }
+    
+    .curriculum-right .curriculum-btn {
+        font-size: var(--size-md);
+        border-radius: 2.5rem;
+        padding: .75rem 2.5rem;
+        margin: 3rem 0;
+    }
+}
+
+/*xxl */
+/*@media (min-width :1536px){}*/

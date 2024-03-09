@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    
+    --clr-light:hsl(0, 0%, 100%) ;
+    --clr-tur:#53a7ba;
+    --clr-sky-blue:#81b7c8;
+    --clr-dark:#000 ;
+    --clr-grey:#b4def1 ;
+    --clr-light-grey:#afd5e7 ;
+    --clr-greyish:#7b7b7b;
+    --clr-rose:#ef0048 ;
+    --clr-light-rose:#ff1759 ; 
+    --clr-darkish: #10212f;
+    --clr-gold:#f5c837;
+    --clr-light-blue:#486ecef7; 
+    --clr-blue:#001f45;
+    --clr-dark-blue:#022857e1;
+    --clr-darker-blue:#081938;
+    --clr-grad : #0022b7dc;
+    --clr-gradient : -webkit-linear-gradient(45deg, #0d47a5, #8a20bf, #d21c68);
+    --clr-gradient-rev : -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9 );
+    --clr-green-light : #d3f1e6e7;
+
+    /*sizes*/
+    --size-xxs:0.5rem ;
+    --size-xs:0.75rem ;
+    --size-sm:0.875rem;
+    --size-md:1rem ;
+    --size-lg:1.125rem ;
+    --size-xl:1.25rem ;
+    --size-2xl:1.5rem ;
+    --size-3xl:1.875rem ;
+    --size-4xl:2.25rem ;
+    --size-5xl:3rem ;
+    --size-6xl:3.75rem ;
+    --size-7xl:5rem ;
+    --size-8xl:6rem ;
+    --size-9xl:8rem ;
+
+}
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--clr-dark);
+    background-color: var(--clr-green-light);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+img,
+picture,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-light);
+    border-radius: 100vw;
+    margin-block: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-light-blue);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-tur);
+}

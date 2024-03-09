@@ -1,0 +1,251 @@
+.faq {
+    padding: 1rem 0;
+}
+
+/* .faq-container {
+
+} */
+
+.faq-content .group {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from{transform: translateX(3rem);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+
+}
+
+.faq-group {
+    border-bottom: 1.5px var(--clr-dark) solid;
+    padding-bottom: .5rem;
+}
+
+.faq-group-header {
+    display: flex;
+    align-items: center;
+    padding: .75rem 0;
+    margin-bottom: .25rem;
+    position: relative;
+}
+
+.faq-group-text {
+    font-size: var(--size-xs);
+    font-weight: 600;
+    width: 90%;
+}
+
+.faq-group-header i {
+    position: absolute;
+    right: 0;
+    font-size: .75rem;
+    cursor: pointer;
+}
+
+.faq-group-body {
+    display: none;
+}
+
+.faq-group-body p {
+    font-size: var(--size-xs);
+}
+
+.step-li{
+    font-size: var(--size-xs);
+}
+.faq-group-body.open {
+    display: block;
+    animation: popin .4s ease;
+}
+
+@keyframes popin {
+    from{transform: translateY(-3rem);opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}
+.faq-title {
+    text-align: center;
+    font-size: var(--size-lg);
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+.faq-menu {
+    max-width: 30rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-grey);
+    padding: .25rem .75rem;
+    border-radius: .75rem;
+    cursor: pointer;
+}
+
+.tab-btn {
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: var(--size-sm);
+}
+
+.tab-btn.active {
+    background: var(--clr-blue);
+    color: var(--clr-light);
+    transition: all .3s ease-in-out;
+}
+
+.faq-group-name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: var(--size-md);
+    font-weight: 700;
+}
+.faq-content {
+    padding: 2rem 0;
+}
+
+.group.active {
+    display:block;
+}
+
+.faq-link {
+    text-decoration: none;
+    color: var(--clr-rose);
+    transition: 0.4s;
+}
+
+.faq-link:hover {
+    color: var(--clr-blue);
+}
+
+/*xs */
+/*@media (min-width :475px){}*/
+
+/*sm */
+/*@media (min-width :640px){}/*
+
+/*md */
+@media (min-width :768px){
+    
+    .faq-container {
+        padding: 0 3rem;
+     }
+    .faq-title {
+        font-size: var(--size-xl);
+    }
+    .faq-menu {
+        max-width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 1.25rem;
+    }
+
+    .faq-group-text {
+        font-size: var(--size-sm);
+    }
+    
+    .faq-group-body p {
+        font-size: var(--size-sm);
+    }
+    .faq-group-name {
+        font-size: var(--size-lg);
+    }
+
+    .step-li{
+        font-size: var(--size-sm);
+    }
+}
+
+/*lg */
+@media (min-width :1024px){
+    .faq {
+        padding: 2rem 0;
+    }
+    
+    .faq-container {
+       padding: 0 6rem;
+    }
+    
+    .faq-group-header {
+        padding: 1.25rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .faq-group-text {
+        font-size: var(--size-md);
+    }
+    
+    .faq-group-header i {
+        font-size: 1rem;
+    }
+
+    .faq-group-body.open {
+       padding-bottom: 1rem;
+    }
+
+    .faq-group-body p {
+        font-size: var(--size-md);
+    }
+    
+    .faq-group-body {
+        display: none;
+    }
+    
+    .faq-group-body.open {
+        display: block;
+    }
+    
+    .faq-title {
+        font-size: var(--size-3xl);
+        padding-bottom: 3rem;
+    }
+    .faq-menu {
+        max-width: 40rem;
+        border-radius: .75rem;
+    }
+    
+    .tab-btn {
+        padding: .75rem 1.25rem;
+        font-size: var(--size-md);
+    }
+    
+    .faq-group-name {
+        font-size: var(--size-2xl);
+    }
+    .faq-content {
+        padding: 2rem 0;
+    }
+
+    .step-li{
+        font-size: var(--size-md);
+    }
+}
+
+/*xl */
+@media (min-width :1280px){
+    
+    .faq-container {
+       padding: 0 10rem;
+    }
+    
+    .faq-group-header {
+        padding: 1.25rem 0;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    
+    .faq-title {
+        font-size: var(--size-5xl);
+    }
+    
+    .faq-content {
+        padding: 3rem 0;
+    }
+
+}
+
+/*xxl */
+/*@media (min-width :1536px){}*/

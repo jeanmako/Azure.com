@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.choice {
+    width: 100%;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background: url(../../public/bg.png) no-repeat center center/cover;
+    background-color: var(--clr-sky-blue);
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.choice-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--size-sm);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.choice-item {
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25rem;
+}
+
+.choice-item svg {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+    fill: var(--clr-rose);
+}
+
+.choice-item h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: var(--size-2xl);
+    color: var(--clr-darker-blue);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.choice-item h3 {
+    font-size: var(--size-sm);
+    font-weight: 600;
+    text-align: center;
+}
+
+/*xs */
+/*@media (min-width :475px){}*/
+
+/*sm */
+/*@media (min-width :640px){}/*
+
+/*md */
+@media (min-width :768px){
+    .choice-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+
+    .choice-item h3 {
+        font-size: var(--size-xs);
+        text-align: left;
+        max-width: 22.5rem;
+        margin: 0 auto;
+    }
+}
+
+/*lg */
+@media (min-width :1024px){
+    .choice-item svg {
+        width: var(--size-6xl);
+        height: var(--size-6xl);
+    }
+    .choice-item h2 {
+        font-size: var(--size-3xl);
+    }
+    .choice-item h3 {
+        font-size: var(--size-sm);
+    }
+}
+
+/*xl */
+@media (min-width :1280px){
+    .choice {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+    
+    .choice-grid {
+        gap: 3rem;
+    }
+    
+    .choice-title {
+        padding-bottom: 2rem;
+    }
+    
+    .choice-item {
+        margin-top: 2rem;
+        gap: .5rem;
+    }
+    
+    .choice-item svg {
+        width: var(--size-7xl);
+        height: var(--size-7xl);
+    }
+    
+    .choice-item h2 {
+        font-size: var(--size-4xl);
+    }
+    
+    .choice-item h3 {
+        font-size: var(--size-md);
+    }
+}
+
+/*xxl */
+/*@media (min-width :1536px){}*/

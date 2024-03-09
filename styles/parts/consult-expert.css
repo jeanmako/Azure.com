@@ -1,0 +1,225 @@
+.free-consult {
+    height: 25rem;
+    background: var(--clr-grad);
+    margin-bottom: 27.5rem;
+    color: var(--clr-light);
+    position: relative;
+    z-index: 0;
+}
+
+.free-text {
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.free-consult h1 {
+    font-size: var(--size-xl);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.free-consult p {
+    margin: 1.5rem 0 .5rem 0;
+    font-size: var(--size-sm);
+    text-align: center;
+}
+
+.free-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+}
+
+.free-form {
+    background: var(--clr-light);
+    color: var(--clr-darker-blue);
+    border-radius: .5rem;
+    box-shadow: .25rem .5rem .5rem rgba(0,0,0,.2);
+    justify-self: center;
+    margin: auto;
+    padding: .5rem 1.5rem;
+    margin: .75rem;
+    position: relative;
+    top: 0;
+    height: 27.5rem;
+    width: 90%;
+    z-index: 100;
+    align-items: center;
+    text-align: center;
+    }
+
+    .free-form .form-control {
+        margin: .5rem 0;
+    }
+
+.free-form h2 {
+    font-size: var(--size-md);
+    font-weight: 600;
+}
+
+.free-form input[type='text' ],
+    .free-form input[type='email' ],
+    .free-form input[type='tel' ],
+    .free-form textarea {
+    width: 100%;
+    padding: .25rem;
+    font-size: var(--size-xs);
+    background: transparent;
+    border: 1.5px solid var(--clr-dark);
+    border-radius: .25rem;
+    color: var(--clr-dark);
+}
+
+.free-form input[type='checkbox'] {
+    font-size: var(--size-xs);
+    margin-right: .75rem;
+}
+
+.free-consult .free-form p {
+    font-size: var(--size-xs);
+    font-weight: 600;
+    text-align: left;
+    margin: .25rem 0;
+}
+
+.free-form input:focus,
+.free-form textarea {
+    outline: none;
+}
+
+.free-form .btn-schedule {
+    background: var(--clr-grad);
+    padding: .75rem 1rem;
+    color: var(--clr-light);
+}
+
+.free-form .btn-schedule:hover {
+    box-shadow: 0 0 1rem var(--clr-darker-blue);
+    color: var(--clr-light);
+
+}
+
+/*xs */
+@media (min-width :475px){
+
+    .free-form {
+        width: 20rem;
+    }
+
+    .free-consult h1 {
+        font-size: var(--size-xl);
+       
+    }
+    .free-form h2 {
+        font-size: var(--size-xl);
+    }
+}
+
+/*sm */
+/*@media (min-width :640px){}/*
+
+/*md */
+@media (min-width :768px){
+    
+    .free-consult {
+    height: 30rem;
+    margin-bottom: 10rem;
+}
+
+.free-text {
+    text-align: left;
+    margin-top: .5rem;
+    
+}
+
+.free-consult h1 {
+    font-size: var(--size-3xl);
+}
+
+.free-consult p {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.free-content {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+}
+}
+
+/*lg */
+@media (min-width :1024px){
+
+    .free-consult {
+        margin-bottom: 20rem;
+    }
+
+.free-consult h1 {
+    font-size: var(--size-4xl);
+}
+
+.free-consult p {
+    font-size: var(--size-md);
+}
+
+.free-content {
+    gap: 2rem;
+}
+
+.free-form {
+    padding: 2rem 3rem;
+    top: 3rem;
+    height: 35rem;
+    width: 25rem;
+}
+
+.free-form .form-control {
+    margin: .5rem 0;
+}
+
+.free-form h2 {
+    font-size: var(--size-2xl);
+}
+
+.free-form input[type='text' ],
+.free-form input[type='email' ],
+.free-form input[type='tel' ],
+.free-form textarea {
+    padding: .5rem;
+    font-size: var(--size-md);
+}
+
+.free-form .btn-schedule {
+    padding: 1rem 2rem;
+}
+}
+
+/*xl */
+@media (min-width :1280px){
+    
+    .free-consult h1 {
+        font-size: var(--size-5xl);
+    }
+    
+    .free-consult p {
+        font-size: var(--size-lg);
+    }
+    
+    .free-form {
+        width: 30rem;
+    }
+    
+    .free-form h2 {
+        font-size: var(--size-2xl);
+    }
+}
+
+/*xxl */
+/*@media (min-width :1536px){}*/

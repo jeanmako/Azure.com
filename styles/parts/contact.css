@@ -1,0 +1,145 @@
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-content form {
+    text-align: center;
+    width: 17rem;
+}
+
+form .input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.field .item {
+    width: 100%;
+    padding: .75rem;
+    background: transparent;
+    border: 2px solid var(--clr-rose);
+    border-radius: .5rem;
+    font-size: var(--size-xs);
+    color: var(--clr-dark);
+    margin: .5rem 0;
+}
+
+.field .item:focus {
+    outline: none;
+}
+
+.field .item::placeholder {
+    color: var(--clr-dark-blue)
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align:center;
+    font-size: var(--size-xs);
+  }
+  
+  .checkbox input{
+    margin: 0 .25rem 0;
+  }
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form button {
+    padding: .5rem 1rem;
+    background: var(--clr-blue);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    font-size: var(--size-sm);
+    color: var(--clr-light);
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: 0 0 1rem var(--clr-dark-blue);
+}
+
+/*xs */
+/*@media (min-width :475px){}*/
+
+/*sm */
+@media (min-width :640px){
+    .contact-us-content form {
+        width: 22.5rem;
+    }
+}
+
+/*md */
+@media (min-width :768px){
+    .contact-us-content form {
+        width: 32.5rem;
+    }
+    
+    .input-box .input-field {
+        width: 47%;
+    }
+    
+    form .input-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .field .item {
+        font-size: var(--size-sm);
+    }
+    
+    .checkbox {
+        font-size: var(--size-sm);
+      }
+
+      .checkbox input{
+        margin: 0 .75rem 0;
+      }
+      
+    form button {
+        font-size: var(--size-md);
+    }
+}
+
+/*lg */
+/*@media (min-width :1024px){}
+
+/*xl */
+@media (min-width :1280px){
+    .contact-us-content form {
+        width: 45rem;
+    }
+    
+    .field .item {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .checkbox input{
+        margin: 0 1rem 0;
+    }
+    
+    form button {
+        padding: .75rem 1.75rem;
+        font-size: var(--size-md);
+        margin-top: 1rem;
+    }
+    
+    form button:hover {
+        box-shadow: 0 0 2rem var(--clr-dark-blue);
+    }
+}
+
+/*xxl */
+/*@media (min-width :1536px){}*/
